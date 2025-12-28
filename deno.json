@@ -1,0 +1,7 @@
+{
+  "workspace": ["./gateway", "./processor"],
+  "tasks": {
+    "dev:gateway": "OTEL_DENO=true OTEL_SERVICE_NAME=gateway deno run --unstable-otel -A gateway/main.ts",
+    "dev:processor": "OTEL_DENO=true OTEL_SERVICE_NAME=processor deno run --unstable-otel -A processor/main.ts"
+  }
+}
